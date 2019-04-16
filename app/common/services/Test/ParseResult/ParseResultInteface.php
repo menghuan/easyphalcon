@@ -4,15 +4,15 @@ namespace Common\Services\SmsPlatForm\ParseResult;
 /**
  * 解析接口返回值
  * 更新任务状态
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-3 13:29:16
+ * @author wangjianghua
+ * @date 2018-3-3 13:29:16
  */
 interface ParseResultInteface
 {
     /**
      * 解析发送单条短信结果
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-03 14:25
+     * @author wangjianghua
+     * @date 2018-03-03 14:25
      * @param string $response 短信通道返回的信息
      * {
      * "code": 0,
@@ -44,8 +44,8 @@ interface ParseResultInteface
 
     /**
      * 解析发送多条短信结果
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-03 14:25
+     * @author wangjianghua
+     * @date 2018-03-03 14:25
      * @param string $response 短信通道返回的信息
      * @return array
      * 返回值demo：
@@ -68,8 +68,8 @@ interface ParseResultInteface
 
     /**
      * 解析余额接口返回的信息
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-0303 14:26
+     * @author wangjianghua
+     * @date 2018-0303 14:26
      * @param string $response 请求余额接口返回的信息
      * @return array
      */
@@ -77,8 +77,8 @@ interface ParseResultInteface
 
     /**
      * 解析短信通道推送的短信上行消息
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-03 14:27
+     * @author wangjianghua
+     * @date 2018-03-03 14:27
      * @param string $response 短信通道推送的消息
      * @return array
      */
@@ -87,7 +87,7 @@ interface ParseResultInteface
     /**
      * 解析短信通道推送的短信状态
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-03 14:27
+     * @date 2018-03-03 14:27
      * @param string $response 短信通道推送的消息
      * @return array
      */
@@ -95,8 +95,8 @@ interface ParseResultInteface
 
     /**
      * 更新任务状态
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-04 11:09
+     * @author wangjianghua
+     * @date 2018-03-04 11:09
      * @param int $taskId 任务ID
      * @param array $sendResult 任务状态数组
      * [

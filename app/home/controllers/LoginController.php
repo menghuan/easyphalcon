@@ -3,15 +3,15 @@ use Common\Services\SmsPlatForm\AdminService;
 
 /**
  * 登陆表单页
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-2-25 9:42:33
+ * @author wangjianghua
+ * @date 2018-2-25 9:42:33
  */
 class LoginController extends Phalcon\Mvc\Controller
 {
     /**
      * 登陆表单页
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-02-25 10:20
+     * @author wangjianghua
+     * @date 2018-02-25 10:20
      * @return null
      */
     public function loginAction()
@@ -21,8 +21,8 @@ class LoginController extends Phalcon\Mvc\Controller
 
     /**
      * 执行登陆，验证账号密码。
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-02-25 10:22
+     * @author wangjianghua
+     * @date 2018-02-25 10:22
      * @return null;
      */
     public function doLoginAction()

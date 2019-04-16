@@ -7,7 +7,7 @@ use Common\Services\SmsPlatForm\SendTaskDetailService;
 /**
  * 解析沃动返回值
  * @author 李新招 <lixinzhoa@qiaodata.com>
- * @date 2017-3-3 14:38:14
+ * @date 2018-3-3 14:38:14
  */
 class ParseWeiXinTongLianService implements ParseResultInteface
 {
@@ -15,12 +15,12 @@ class ParseWeiXinTongLianService implements ParseResultInteface
     /**
      * 解析发送单条短信结果
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-08-02
+     * @date 2018-08-02
      * @param string $response 短信通道返回的信息
      *   resptime,respstatus,msgid
      * @return array
      * 返回值demo：
-     * string(37) "20170306165638,0 1230306165638860000 "
+     * string(37) "20180306165638,0 1230306165638860000 "
      */
     public function parseSendOneResult($response, $parameters)
     {
@@ -71,7 +71,7 @@ class ParseWeiXinTongLianService implements ParseResultInteface
     /**
      * 解析余额接口返回的信息
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-0308 14:26
+     * @date 2018-0308 14:26
      * @param string $response 请求余额接口返回的信息
      * @return array
      */
@@ -94,7 +94,7 @@ class ParseWeiXinTongLianService implements ParseResultInteface
     /**
      * 解析短信通道推送的短信状态
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-03 14:27
+     * @date 2018-03-03 14:27
      * @param string $response 短信通道推送的消息
      * array(2) { ["account"]=> string(9) "qiaodaSMS" ["GetReport"]=> string(40) "2114897500138967701,18511892705,DELIVRD|" }
      * @return array
@@ -129,7 +129,7 @@ class ParseWeiXinTongLianService implements ParseResultInteface
     /**
      * 更新任务状态
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-04 11:09
+     * @date 2018-03-04 11:09
      * @param int $taskId 任务ID
      * @param array $sendResult 任务状态数组
      * [

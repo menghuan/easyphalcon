@@ -7,14 +7,14 @@ use Common\Services\SmsPlatForm\ChannelApiParamService;
 /**
  * API参数
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-3-2 20:07:27
+ * @date 2018-3-2 20:07:27
  */
 class ParameterAnXinJieService
 {
     /**
      * 创建单条发送短信的接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-15 11:00
+     * @date 2018-06-15 11:00
      * @param int $apiId API id
      * @param array  $data
      *      [
@@ -46,7 +46,7 @@ class ParameterAnXinJieService
     /**
      * 创建多条发送短信的接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-15 11:00
+     * @date 2018-06-15 11:00
      * @param int $apiId API id
      * @param array  $data
      *[
@@ -87,7 +87,7 @@ class ParameterAnXinJieService
     /**
      * 创建获取余额的接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-07 15:54
+     * @date 2018-03-07 15:54
      * @param int $apiId API id
      * @return array
      */
@@ -107,7 +107,7 @@ class ParameterAnXinJieService
     /**
      * 创建获取短信状态的接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-14 09:33
+     * @date 2018-03-14 09:33
      * @param int $apiId API id
      * @return array
      */
@@ -127,7 +127,7 @@ class ParameterAnXinJieService
     /**
      * 创建获取短信回复的接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-14 09:33
+     * @date 2018-03-14 09:33
      * @param int $apiId API id
      * @return array
      */
@@ -139,7 +139,7 @@ class ParameterAnXinJieService
     /**
      * 根据API ID 查找接口参数
      * @author 苏云雷 <dongguangming@qiaodata.com>
-     * @date 2017-0303 10:10
+     * @date 2018-0303 10:10
      * @param int $apiId API id
      * @return Common\Models\SmsPlatForm\ChannelApi
      */

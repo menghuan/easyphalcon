@@ -7,16 +7,16 @@ use Common\Services\SmsPlatForm\ProjectService;
 
 /**
  * api接口添加
- * @author 李新招 <lixinzhao@qiaodata.com>
- * @date 2017-2-27 15:04:33
+ * @author wangjianghua
+ * @date 2018-2-27 15:04:33
  */
 class BlacklistController extends BaseController
 {
     const PAGESIZE = 15;
     /**
      * api接口添加页面显示
-     * @author lxz <lixinzhao@qiaodata.com>
-     * @date 2017-02-27 10:20
+     * @author wangjianghua
+     * @date 2018-02-27 10:20
      * @return null
      */
     public function addAction()
@@ -29,8 +29,8 @@ class BlacklistController extends BaseController
 
     /**
      * api接口添加操作
-     * @author lxz <lixinzhao@qiaodata.com>
-     * @date 2017-02-27 10:20
+     * @author wangjianghua
+     * @date 2018-02-27 10:20
      * @return null
      */
     public function doAddAction()
@@ -82,8 +82,8 @@ class BlacklistController extends BaseController
 
     /**
      * 用户退订黑名单列表
-     * @author lxz <lixinzhao@qiaodata.com>
-     * @date 2017-02-27 17:07
+     * @author wangjianghua
+     * @date 2018-02-27 17:07
      * @return null
      */
     public function listAction($curPage = 1, $projectId = 0, $signId = 0, $status = 0, $mobile = 0)
@@ -158,8 +158,8 @@ class BlacklistController extends BaseController
 
     /**
      * 手动添加黑名单列表
-     * @author lxz <lixinzhao@qiaodata.com>
-     * @date 2017-02-27 17:07
+     * @author wangjianghua
+     * @date 2018-02-27 17:07
      * @return null
      */
     public function listAddAction($curPage = 1, $mobile = 0)
@@ -196,7 +196,7 @@ class BlacklistController extends BaseController
     /**
      * 黑名单修改
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-03 15:47
+     * @date 2018-05-03 15:47
      * @return json
      */
     public function setBlackStatus_ajaxAction()
@@ -214,8 +214,8 @@ class BlacklistController extends BaseController
 
     /**
      * api修改操作
-     * @author lxz <lixinzhao@qiaodata.com>
-     * @date 2017-02-25 17:07
+     * @author wangjianghua
+     * @date 2018-02-25 17:07
      * @return null
      */
     public function delAction($id = 0)
@@ -250,7 +250,7 @@ class BlacklistController extends BaseController
     /**
      * blacklist POST接受参数
      * @author lxz <lixinzhao@qiaodata.com>
-     * @date 2017-02-28 12:00
+     * @date 2018-02-28 12:00
      * @return  array  $data
      */
     public function getPost()
@@ -268,8 +268,8 @@ class BlacklistController extends BaseController
 
     /**
      * blacklist入库数据判断
-     * @author lxz <lixinzhao@qiaodata.com>
-     * @date 2017-02-28 12:00
+     * @author wangjianghua
+     * @date 2018-02-28 12:00
      * @return false or true
      */
     public function checks($data)

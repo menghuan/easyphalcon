@@ -6,7 +6,7 @@ use Common\Models\SmsPlatForm\ReplayLog;
 /**
  * 管理员 triggering
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-2-27 11:30:00
+ * @date 2018-2-27 11:30:00
  */
 class ReplayLogService extends \Common\Services\BaseService
 {

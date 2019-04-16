@@ -6,8 +6,8 @@ use Common\Models\SmsPlatForm\StatisticsDetail;
 /**
  * Description of StatisticsDetailService
  *
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-4-26 15:36:14
+ * @author wangjianghua
+ * @date 2018-4-26 15:36:14
  */
 class StatisticsDetailService extends \Common\Services\BaseService
 {
@@ -20,8 +20,8 @@ class StatisticsDetailService extends \Common\Services\BaseService
     /**
      * 搜索统计信息
      * 根据签名统计、根据通道统计、根据日期统计
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-04-26 15:39
+     * @author wangjianghua
+     * @date 2018-04-26 15:39
      * @param int $type 通道类型
      * @param int $signId 签名ID
      * @param int $channelId 通道ID
@@ -47,8 +47,8 @@ class StatisticsDetailService extends \Common\Services\BaseService
     
     /**
      * 统计数量
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-04-26 16:58
+     * @author wangjianghua
+     * @date 2018-04-26 16:58
      * @param int $type 通道类型
      * @param int $signId 签名ID
      * @param int $channelId 通道ID
@@ -71,8 +71,8 @@ class StatisticsDetailService extends \Common\Services\BaseService
     
     /**
      * 添加数据，当重复时更新数据。
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-06 08:52
+     * @author wangjianghua
+     * @date 2018-05-06 08:52
      * @param array $data 新数据
      * @return int 受影响行数
      */

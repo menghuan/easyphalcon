@@ -4,8 +4,8 @@ use Common\Services\SmsPlatForm\AesService;
 /**
  * Description of TestController
  *
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-1 17:00:12
+ * @author wangjianghua
+ * @date 2018-3-1 17:00:12
  */
 class TestController extends Phalcon\Mvc\Controller
 {

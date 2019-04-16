@@ -3,15 +3,15 @@ namespace Common\Services\SmsPlatForm;
 
 /**
  * 参数类工场
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-2 10:29:51
+ * @author wangjianghua
+ * @date 2018-3-2 10:29:51
  */
 class ParamFactoryService
 {
     /**
      * 获取参数Service实例
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-02 19:54
+     * @author wangjianghua
+     * @date 2018-03-02 19:54
      * @param \Common\Model\SmsPlatForm\Channel $channel Channel model object
      * @return \Common\Services\SmsPlatForm\Parameter\ParameterService
      */

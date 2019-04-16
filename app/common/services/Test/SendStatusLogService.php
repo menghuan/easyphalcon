@@ -6,7 +6,7 @@ use Common\Models\SmsPlatForm\SendStatusLog;
 /**
  * 管理员 triggering
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-2-27 11:30:00
+ * @date 2018-2-27 11:30:00
  */
 class SendStatusLogService extends \Common\Services\BaseService
 {
@@ -31,7 +31,7 @@ class SendStatusLogService extends \Common\Services\BaseService
     /**
      * 根据时间获取要处理的数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @data 2017-10-17
+     * @data 2018-10-17
      * @param int $start
      * @param int $end
      * @return array
@@ -47,7 +47,7 @@ class SendStatusLogService extends \Common\Services\BaseService
     /**
      * 根据时间删除数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @data 2017-10-17
+     * @data 2018-10-17
      * @param int $start
      * @param int $end
      * @param int $limit

@@ -6,8 +6,8 @@ use Common\Models\SmsPlatForm\StatisticsDay;
 /**
  * Description of StatisticsService
  *
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-4-20 21:08:07
+ * @author wangjianghua
+ * @date 2018-4-20 21:08:07
  */
 class StatisticsDayService extends \Common\Services\BaseService
 {
@@ -20,8 +20,8 @@ class StatisticsDayService extends \Common\Services\BaseService
 
     /**
      * 根据通道类型获取
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-04-25 11:26
+     * @author wangjianghua
+     * @date 2018-04-25 11:26
      * @param int $type 类型
      * @param int $page 页数
      * @param int $pageSize 每页数据量
@@ -43,8 +43,8 @@ class StatisticsDayService extends \Common\Services\BaseService
 
     /**
      * 根据通道类型统计总数
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-04-25 14:06
+     * @author wangjianghua
+     * @date 2018-04-25 14:06
      * @param type $type 通道类型，1：营销类型；2：出发类型。
      * @return int
      */
@@ -57,8 +57,8 @@ class StatisticsDayService extends \Common\Services\BaseService
     
     /**
      * 添加数据，当重复时更新数据。
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-05 17:20
+     * @author wangjianghua
+     * @date 2018-05-05 17:20
      * @param array $data 新数据
      * @return int 受影响行数
      */
@@ -73,7 +73,7 @@ class StatisticsDayService extends \Common\Services\BaseService
     /**
      * 根据 day_timestamp 查询数据
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-06-13 10:15
+     * @date 2018-06-13 10:15
      * @param int $dayTimestamp 当天凌晨零点零分零秒的时间戳
      * @return array()
      */

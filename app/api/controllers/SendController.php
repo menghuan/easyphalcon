@@ -17,8 +17,8 @@ use Common\Services\SmsPlatForm\WarningService;
 
 /**
  * 添加发送任务
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-4 23:15:49
+ * @author wangjianghua
+ * @date 2018-3-4 23:15:49
  */
 class SendController extends Phalcon\Mvc\Controller
 {
@@ -111,8 +111,8 @@ class SendController extends Phalcon\Mvc\Controller
      * +------------------+--------+---------------------------------------------------------+
      * | is_repetition    | int    | 是否是补发的短信                                         |
      * +------------------+--------+---------------------------------------------------------+
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-04 23:20
+     * @author wangjianghua
+     * @date 2018-03-04 23:20
      * @return null
      * 响应信息：
      * {
@@ -226,8 +226,8 @@ class SendController extends Phalcon\Mvc\Controller
 
     /**
      * 记录超时的数据
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-06 14:22
+     * @author wangjianghua
+     * @date 2018-05-06 14:22
      * @return int 任务ID
      */
     public function addOutTimerangeData()
@@ -287,7 +287,7 @@ class SendController extends Phalcon\Mvc\Controller
     /**
      * 记录任务整体失败的日志内容
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-26
+     * @date 2018-06-26
      * @return null;
      */
      private function writeLog()
@@ -310,7 +310,7 @@ class SendController extends Phalcon\Mvc\Controller
     /**
      * 记录任务整体失败的日志内容
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-26
+     * @date 2018-06-26
      * @return null;
      */
     private function writeFailLog()
@@ -334,8 +334,8 @@ class SendController extends Phalcon\Mvc\Controller
 
     /**
      * 往mysql添加任务失败时添加错误日志
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-05 16:43
+     * @author wangjianghua
+     * @date 2018-05-05 16:43
      * @return null;
      */
     private function writeAddErrorLog()
@@ -383,8 +383,8 @@ class SendController extends Phalcon\Mvc\Controller
      *       c. 跟进补发：添加一个参数表示是否是补发即可。
      * （11）批量发送携带“超级白名单”
      *       a. 超级白名单：批量发送通道，以批次为单位，每个批次随机都带一个超级白名单号码发送，同一超级白名单号码在同一通道每天发送不超过10条
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-04-28 13:53
+     * @author wangjianghua
+     * @date 2018-04-28 13:53
      * @param array $parameters 发送参数
      * @return array
      * [
@@ -557,8 +557,8 @@ class SendController extends Phalcon\Mvc\Controller
      * （8）黑名单排查
      * （9）白名单排查
      * （11）批量发送携带“超级白名单”
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-03 17:03
+     * @author wangjianghua
+     * @date 2018-05-03 17:03
      * @param int $sign 签名ID
      * @param array $supperWhitelist 超级白名单
      * @return null
@@ -592,8 +592,8 @@ class SendController extends Phalcon\Mvc\Controller
      *  1.短信内容不能为空
      *  2.短信签名
      *  3.短信退订字样
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-02 13:49
+     * @author wangjianghua
+     * @date 2018-05-02 13:49
      * @param obj $channel object
      * @param array $sendContents array
      * @return array
@@ -634,8 +634,8 @@ class SendController extends Phalcon\Mvc\Controller
 
     /**
      * 将产品提交的发送任务存储到数据库
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-04 16:20
+     * @author wangjianghua
+     * @date 2018-05-04 16:20
      * @return int task id
      */
     private function addTask()
@@ -681,8 +681,8 @@ class SendController extends Phalcon\Mvc\Controller
      * 8：退订字样验证失败的
      * 9：超过发送限制的
      * 10：不再发送时间段内的
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-04 17:26
+     * @author wangjianghua
+     * @date 2018-05-04 17:26
      * @return array
      */
     private function mergeSmsList($taskId)
@@ -746,8 +746,8 @@ class SendController extends Phalcon\Mvc\Controller
 
     /**
      * 发布任务
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-05 11:27
+     * @author wangjianghua
+     * @date 2018-05-05 11:27
      * @return null
      */
     private function publishTask()

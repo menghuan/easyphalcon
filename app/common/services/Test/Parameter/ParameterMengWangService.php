@@ -8,7 +8,7 @@ use Common\Services\SmsPlatForm\SignService;
 /**
  * 数米API参数
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-3-2 20:07:27
+ * @date 2018-3-2 20:07:27
  */
 class ParameterMengWangService
 {
@@ -21,7 +21,7 @@ class ParameterMengWangService
     /**
      * 创建单条发送短信的接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-09 11:00
+     * @date 2018-03-09 11:00
      * @return array
      */
     public function createSendOneParam($apiId, $data,$ext)
@@ -32,7 +32,7 @@ class ParameterMengWangService
     /**
      * 创建多条发送短信的接口参数  暂不支持批量发送不同内容(批量发送返还无手机号只有msgid)
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-09 15:16
+     * @date 2018-03-09 15:16
      * @param int $apiId API id   array  $data  array('手机号'=>'短信内容');
      * @return array
      */
@@ -58,7 +58,7 @@ class ParameterMengWangService
     /**
      * 创建获取余额的接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-09 11:08
+     * @date 2018-03-09 11:08
      * @return array
      */
     public function createBalanceParam($apiId)
@@ -77,7 +77,7 @@ class ParameterMengWangService
     /**
      * 根据API ID 查找接口参数
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-0303 10:10
+     * @date 2018-0303 10:10
      * @param int $apiId API id
      * @return Common\Models\SmsPlatForm\ChannelApi
      */

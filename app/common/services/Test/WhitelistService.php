@@ -5,8 +5,8 @@ use Common\Models\SmsPlatForm\Whitelist;
 
 /**
  * 管理员
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-2-25 11:25:22
+ * @author wangjianghua
+ * @date 2018-2-25 11:25:22
  */
 class WhitelistService extends \Common\Services\BaseService
 {
@@ -19,7 +19,7 @@ class WhitelistService extends \Common\Services\BaseService
     /**
      * 获取列表数据 分页代码
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getList_Page($where = [], $page = 1, $pageSize = 10)
@@ -31,7 +31,7 @@ class WhitelistService extends \Common\Services\BaseService
     /**
      * 根据sign_id 和 mobile查找用户信息
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-02-28 17:32
+     * @date 2018-02-28 17:32
      * @param string $sign_id $mobile int
      * @return
      */
@@ -45,8 +45,8 @@ class WhitelistService extends \Common\Services\BaseService
 
     /**
      * 根据白名单状态读取白名单数据
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-03 16:40
+     * @author wangjianghua
+     * @date 2018-05-03 16:40
      * @param int $status 状态0：已删除；1：正常使用。
      * @return obj
      */

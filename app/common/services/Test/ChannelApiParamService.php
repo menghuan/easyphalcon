@@ -5,8 +5,8 @@ use Common\Models\SmsPlatForm\ChannelApiParam;
 
 /**
  * 管理员
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-2-25 11:25:22
+ * @author wangjianghua
+ * @date 2018-2-25 11:25:22
  */
 class ChannelApiParamService extends \Common\Services\BaseService
 {
@@ -19,7 +19,7 @@ class ChannelApiParamService extends \Common\Services\BaseService
     /**
      * 查询数据 全部
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-02-25 18:02
+     * @date 2018-02-25 18:02
      * @param array $data
      * @return
      */
@@ -31,7 +31,7 @@ class ChannelApiParamService extends \Common\Services\BaseService
     /**
      * 根据sign_id 和 mobile查找用户信息
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-02-28 17:32
+     * @date 2018-02-28 17:32
      * @param string $sign_id $mobile int
      * @return
      */
@@ -45,8 +45,8 @@ class ChannelApiParamService extends \Common\Services\BaseService
 
     /**
      * 根据API ID查找接口的所有参数
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-03 10:15
+     * @author wangjianghua
+     * @date 2018-03-03 10:15
      * @param int $apiId 接口ID
      * @return Common\Models\SmsPlatForm\ChannelApiParam
      */
@@ -63,7 +63,7 @@ class ChannelApiParamService extends \Common\Services\BaseService
     /**
      * 根据API ID查找接口的所有参数
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-03 10:15
+     * @date 2018-03-03 10:15
      * @param int $apiId 接口ID
      * @return Common\Models\SmsPlatForm\ChannelApiParam
      */
@@ -77,7 +77,7 @@ class ChannelApiParamService extends \Common\Services\BaseService
     /**
      * 根据API ID修改参数状态
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-23
+     * @date 2018-06-23
      * @param int $apiId 接口ID
      */
     public function updateByApiId($apiId, $status = 1)

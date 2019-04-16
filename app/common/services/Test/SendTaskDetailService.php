@@ -6,8 +6,8 @@ use Common\Models\SmsPlatForm\SendTaskDetail;
 /**
  * Description of SendTaskDetailService
  *
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-2 13:13:18
+ * @author wangjianghua
+ * @date 2018-3-2 13:13:18
  */
 class SendTaskDetailService extends \Common\Services\BaseService
 {
@@ -19,8 +19,8 @@ class SendTaskDetailService extends \Common\Services\BaseService
 
     /**
      * 根据任务ID查找详情列表
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-02 13:40
+     * @author wangjianghua
+     * @date 2018-03-02 13:40
      * @param int $taskId 任务ID
      * @return array
      */
@@ -32,8 +32,8 @@ class SendTaskDetailService extends \Common\Services\BaseService
 
     /**
      * 更新任务
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-04 11:19
+     * @author wangjianghua
+     * @date 2018-03-04 11:19
      * @param int $taskId 任务ID
      * @param string $mobile 手机号码
      * @param array $newData 新数据
@@ -67,8 +67,8 @@ class SendTaskDetailService extends \Common\Services\BaseService
     
     /**
      * 批量更新某个人物下的发送详情。
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-09 14:59
+     * @author wangjianghua
+     * @date 2018-05-09 14:59
      * @param int $taskId 任务ID
      * @param array $mobileList 手机号码列表
      * @param array $newData 新数据
@@ -85,8 +85,8 @@ class SendTaskDetailService extends \Common\Services\BaseService
 
     /**
      * 更新任务
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-04 11:19
+     * @author wangjianghua
+     * @date 2018-03-04 11:19
      * @param int $taskId 任务ID
      * @param string $mobile 手机号码
      * @param array $newData 新数据
@@ -103,7 +103,7 @@ class SendTaskDetailService extends \Common\Services\BaseService
     /**
      * 根据通道taskId 和 手机号 查找详情列表
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-08 10:10
+     * @date 2018-03-08 10:10
      * @return array
      */
     public function getByChannelTaskIdMobile($channelTaskId, $mobile, $order = '', $limit = [],$type = 0)
@@ -118,7 +118,7 @@ class SendTaskDetailService extends \Common\Services\BaseService
     /**
      * 根据通道Id 和 手机号 查找详情列表
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-03-08 10:10
+     * @date 2018-03-08 10:10
      * @return array
      */
     public function getByChannelIdMobile($channelId, $mobile, $order = '', $limit = [])
@@ -133,7 +133,7 @@ class SendTaskDetailService extends \Common\Services\BaseService
     /*
      * 获取发送数量
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-04-27
+     * @date 2018-04-27
      */
     public function getCount($where = [])
     {
@@ -143,7 +143,7 @@ class SendTaskDetailService extends \Common\Services\BaseService
     /*
      * 获取分页数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-04-27
+     * @date 2018-04-27
      */
     public function getList_Page($condition = [], $page = 1, $pageSize = 10)
     {

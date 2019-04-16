@@ -6,8 +6,8 @@ use Common\Models\SmsPlatForm\SendTask;
 /**
  * Description of SendTaskService
  *
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-2 11:45:18
+ * @author wangjianghua
+ * @date 2018-3-2 11:45:18
  */
 class SendTaskService extends \Common\Services\BaseService
 {

@@ -6,7 +6,7 @@ use Common\Models\SmsPlatForm\Sign;
 /**
  * 管理员
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-2-28 13:00:00
+ * @date 2018-2-28 13:00:00
  */
 class SignService extends \Common\Services\BaseService
 {
@@ -19,7 +19,7 @@ class SignService extends \Common\Services\BaseService
     /**
      * 根据where查询
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-28 13:00:00
+     * @date 2018-02-28 13:00:00
      * @return
      */
     public function getByNameProjectId($name = '', $projectId = 0, $columns = [])
@@ -33,7 +33,7 @@ class SignService extends \Common\Services\BaseService
     /**
      * 获取某个产品的签名数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09 11:00:00
+     * @date 2018-05-09 11:00:00
      * @return
      */
     public function getByProjectId($projectId = 0, $columns = [])
@@ -47,7 +47,7 @@ class SignService extends \Common\Services\BaseService
     /**
      * 根据where查询
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-28 13:00:00
+     * @date 2018-02-28 13:00:00
      * @return
      */
     public function getByStatus($status = 1, $columns = [], $name = '')
@@ -58,7 +58,7 @@ class SignService extends \Common\Services\BaseService
     /**
      * 获取列表数据 分页代码
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getList_Page($page = 1, $pageSize = 10,$name = '')
@@ -70,7 +70,7 @@ class SignService extends \Common\Services\BaseService
     /**
      * 根据signId 获取name
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-13 18:30
+     * @date 2018-03-13 18:30
      * @return array()
      */
     public function getSignNames($signId = array())
@@ -90,8 +90,8 @@ class SignService extends \Common\Services\BaseService
 
     /**
      * 获取全部签名
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-04-26 11:49
+     * @author wangjianghua
+     * @date 2018-04-26 11:49
      * @param int $status 状态，0：删除；1：正常。
      * @return obj
      */

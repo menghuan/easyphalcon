@@ -7,7 +7,7 @@ use Common\Services\SmsPlatForm\SendTaskDetailService;
 /**
  * 解析鼎汉返回值 @todo 待测试
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-3-3 14:38:14
+ * @date 2018-3-3 14:38:14
  */
 class ParseHangYuanService implements ParseResultInteface
 {
@@ -58,7 +58,7 @@ class ParseHangYuanService implements ParseResultInteface
     /**
      * 解析发送批量短信结果
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-15 14:25
+     * @date 2018-06-15 14:25
      * @param string $response 短信通道返回的信息
      * @return array
      */
@@ -70,7 +70,7 @@ class ParseHangYuanService implements ParseResultInteface
     /**
      * 解析余额接口返回的信息
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-15 14:26
+     * @date 2018-06-15 14:26
      * @param string $response 请求余额接口返回的信息
      * @return array
      */
@@ -85,7 +85,7 @@ class ParseHangYuanService implements ParseResultInteface
     /**
      * 解析短信通道推送的短信上行消息
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-15 14:27
+     * @date 2018-06-15 14:27
      * @param string $response 短信通道推送的消息  原来数据为数组
      * {
      * }
@@ -123,7 +123,7 @@ class ParseHangYuanService implements ParseResultInteface
     /**
      * 解析短信通道推送的短信状态
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-15 14:27
+     * @date 2018-06-15 14:27
      * @param string $response 短信通道推送的消息
      * array(2) { ["account"]=> string(9) "qiaodaSMS" ["GetReport"]=> string(40) "2114897500138967701,18511892705,DELIVRD|" }
      * @return array
@@ -154,7 +154,7 @@ class ParseHangYuanService implements ParseResultInteface
     /**
      * 更新任务状态
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-15 11:09
+     * @date 2018-06-15 11:09
      * @param int $taskId 任务ID
      * @param array $sendResult 任务状态数组
      * [

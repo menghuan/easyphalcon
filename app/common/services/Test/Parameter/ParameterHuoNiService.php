@@ -6,8 +6,8 @@ use Common\Services\SmsPlatForm\ChannelApiParamService;
 
 /**
  * API参数
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-2 20:07:27
+ * @author wangjianghua
+ * @date 2018-3-2 20:07:27
  */
 class ParameterHuoNiService
 {
@@ -20,7 +20,7 @@ class ParameterHuoNiService
     /**
      * 创建单条发送短信的接口参数
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-07 15:16
+     * @date 2018-03-07 15:16
      * @param int $apiId API id   array  $data  array('手机号'=>'短信内容');
      * @return array
      */
@@ -43,7 +43,7 @@ class ParameterHuoNiService
     /**
      * 创建多条发送短信的接口参数  (批量发送未返回手机号码暂不接入)
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-07 15:16
+     * @date 2018-03-07 15:16
      * @param int $apiId API id   array  $data  array('手机号'=>'短信内容');
      * @return array
      */
@@ -55,7 +55,7 @@ class ParameterHuoNiService
     /**
      * 创建获取余额的接口参数
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-07 15:54
+     * @date 2018-03-07 15:54
      * @param int $apiId API id
      * @return array
      */
@@ -67,8 +67,8 @@ class ParameterHuoNiService
 
     /**
      * 根据API ID 查找接口参数
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-0303 10:10
+     * @author wangjianghua
+     * @date 2018-0303 10:10
      * @param int $apiId API id
      * @return Common\Models\SmsPlatForm\ChannelApi
      */

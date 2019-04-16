@@ -6,8 +6,8 @@ use Common\Services\SmsPlatForm\ChannelApiParamService;
 
 /**
  * API参数
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-2 20:07:27
+ * @author wangjianghua
+ * @date 2018-3-2 20:07:27
  */
 class ParameterGuangXinTongService
 {
@@ -18,7 +18,7 @@ class ParameterGuangXinTongService
     /**
      * 发送同一内容到一个或多个手机号
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-06-21
+     * @date 2018-06-21
      * @param int $apiId API id
      * @param array  $data
      *      [
@@ -45,7 +45,7 @@ class ParameterGuangXinTongService
     /**
      * 批量发送不同短信
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09
+     * @date 2018-05-09
      * @param int $apiId API id
      * @param array  $data
      *  [
@@ -64,7 +64,7 @@ class ParameterGuangXinTongService
     /**
      * 创建获取余额的接口参数
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-07 15:54
+     * @date 2018-03-07 15:54
      * @param int $apiId API id
      * @return array
      */
@@ -83,8 +83,8 @@ class ParameterGuangXinTongService
 
     /**
      * 根据API ID 查找接口参数
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-0303 10:10
+     * @author wangjianghua
+     * @date 2018-0303 10:10
      * @param int $apiId API id
      * @return Common\Models\SmsPlatForm\ChannelApi
      */

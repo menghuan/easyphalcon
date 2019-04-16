@@ -6,7 +6,7 @@ use Common\Models\SmsPlatForm\ReplayDetail;
 /**
  * 管理员 triggering
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-2-27 11:30:00
+ * @date 2018-2-27 11:30:00
  */
 class ReplayDetailService extends \Common\Services\BaseService
 {
@@ -31,7 +31,7 @@ class ReplayDetailService extends \Common\Services\BaseService
     /*
     * 获取发送数量
     * @author 苏云雷 <suyunlei@qiaodata.com>
-    * @date 2017-04-27
+    * @date 2018-04-27
     */
     public function getCount($where = [])
     {
@@ -41,7 +41,7 @@ class ReplayDetailService extends \Common\Services\BaseService
     /*
      * 获取分页数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-04-27
+     * @date 2018-04-27
      */
     public function getList_Page($where = [], $page = 1, $pageSize = 10)
     {
@@ -50,8 +50,8 @@ class ReplayDetailService extends \Common\Services\BaseService
 
     /**
      * 根据签名ID读取退订信息
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-03 15:12
+     * @author wangjianghua
+     * @date 2018-05-03 15:12
      * @param int $signId 签名ID
      * @return obj
      */
@@ -68,7 +68,7 @@ class ReplayDetailService extends \Common\Services\BaseService
     /**
      * 根据手机号读取退订信息
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-04 09:52
+     * @date 2018-05-04 09:52
      * @param int $mobile 签名ID  $hash 返回的键名参数，按照键名分类
      * @return obj
      */

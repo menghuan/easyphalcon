@@ -14,8 +14,8 @@ require dirname(__FILE__) . '/../../library/vendor/PhpCurl/vendor/autoload.php';
 
 /**
  * 发送短信
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-3-2 15:34:08
+ * @author wangjianghua
+ * @date 2018-3-2 15:34:08
  */
 class SendService
 {
@@ -221,8 +221,8 @@ class SendService
 
     /**
      * 更新任务状态
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-03-04 11:09
+     * @author wangjianghua
+     * @date 2018-03-04 11:09
      * @param int $taskId 任务ID
      * @param array $sendResult 任务状态数组
      * [

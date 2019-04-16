@@ -10,7 +10,7 @@ namespace Common\Library\Utils;
 class SnowFlake
 {  
     //开始时间,固定一个小于当前时间的毫秒数即可  
-    const twepoch =  1483203661000;//2017/1/1 00:00:00
+    const twepoch =  1483203661000;//2018/1/1 00:00:00
   
     //机器标识占的位数  
     const workerIdBits = 5;  

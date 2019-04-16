@@ -7,7 +7,7 @@ use Common\Services\SmsPlatForm\SendTaskDetailService;
 /**
  * 解析数米返回值
  * @author 李新招 <lixinzhao@qiaodata.com>
- * @date 2017-3-3 14:38:14
+ * @date 2018-3-3 14:38:14
  */
 class ParseShuMiService implements ParseResultInteface
 {
@@ -15,12 +15,12 @@ class ParseShuMiService implements ParseResultInteface
     /**
      * 解析发送单条短信结果
      * @author 李新招 <lixinzho@qiaodata.com>
-     * @date 2017-03-9 14:25
+     * @date 2018-03-9 14:25
      * @param string $response 短信通道返回的信息
      *   resptime,respstatus,msgid
      * @return array
      * 返回值demo：
-     * string(37) "20170306165638,0 1230306165638860000 "
+     * string(37) "20180306165638,0 1230306165638860000 "
      */
     public function parseSendOneResult($response, $parameters)
     {
@@ -63,7 +63,7 @@ class ParseShuMiService implements ParseResultInteface
     /**
      * 解析发送批量短信结果  暂不支持不同短信的批量发送
      * @author 李新招 <lixinzho@qiaodata.com>
-     * @date 2017-03-08 14:25
+     * @date 2018-03-08 14:25
      * @param string $response 短信通道返回的信息
      * @return array
      */
@@ -75,9 +75,9 @@ class ParseShuMiService implements ParseResultInteface
     /**
      * 解析余额接口返回的信息
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-0309 14:26
+     * @date 2018-0309 14:26
      * @param string $response 请求余额接口返回的信息
-     * string(31) "20170307092638,0 5541259,470535"
+     * string(31) "20180307092638,0 5541259,470535"
      * @return array
      */
     public function parseBalance($response)
@@ -91,7 +91,7 @@ class ParseShuMiService implements ParseResultInteface
     /**
      * 解析短信通道推送的短信上行消息
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-03 14:27
+     * @date 2018-03-03 14:27
      * @param string $response 短信通道推送的消息
      * @return array
      */
@@ -131,9 +131,9 @@ class ParseShuMiService implements ParseResultInteface
     /**
      * 解析短信通道推送的短信上行状态
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-03 14:27
+     * @date 2018-03-03 14:27
      * @param string $response 短信通道推送的消息
-     * 400319|15369297656|DELIVRD|3201137401041||1703201137|2017-03-20 11:37:43|2017-03-20 11:37:52
+     * 400319|15369297656|DELIVRD|3201137401041||1703201137|2018-03-20 11:37:43|2018-03-20 11:37:52
      * @return array
      */
     public function parseReplyStatus($response,$channel = [])
@@ -177,7 +177,7 @@ class ParseShuMiService implements ParseResultInteface
     /**
      * 更新任务状态
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-04 11:09
+     * @date 2018-03-04 11:09
      * @param int $taskId 任务ID
      * @param array $sendResult 任务状态数组
      * [

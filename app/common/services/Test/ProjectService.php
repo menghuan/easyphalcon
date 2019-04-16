@@ -6,7 +6,7 @@ use Common\Models\SmsPlatForm\Project;
 /**
  * 管理员
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-2-27 11:30:00
+ * @date 2018-2-27 11:30:00
  */
 class ProjectService extends \Common\Services\BaseService
 {
@@ -19,7 +19,7 @@ class ProjectService extends \Common\Services\BaseService
     /**
      * 根据code查询
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getByCode($code = '', $columns = [])
@@ -34,7 +34,7 @@ class ProjectService extends \Common\Services\BaseService
     /**
      * 根据name查询
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getByName($name = '', $columns = [])
@@ -49,7 +49,7 @@ class ProjectService extends \Common\Services\BaseService
     /**
      * 根据name查询
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getByStatus($status = '', $columns = [] , $hash = '')
@@ -68,7 +68,7 @@ class ProjectService extends \Common\Services\BaseService
     /**
      * 获取列表数据 分页代码
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getList_Page($page = 1, $pageSize = 10, $name = '')
@@ -80,7 +80,7 @@ class ProjectService extends \Common\Services\BaseService
     /**
      * 获取列表count数量，做分页处理
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getListCount($name = '')

@@ -8,7 +8,7 @@ use Common\Services\SmsPlatForm\SignService;
 /**
  * 管理员 triggering
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-2-27 11:30:00
+ * @date 2018-2-27 11:30:00
  */
 class ChannelService extends \Common\Services\BaseService
 {
@@ -33,7 +33,7 @@ class ChannelService extends \Common\Services\BaseService
     /**
      * 根据name查询
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getByName($name = '', $columns = [])
@@ -48,7 +48,7 @@ class ChannelService extends \Common\Services\BaseService
     /**
      * 根据status查询
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getByStatus($status = 1, $columns = [], $name = '')
@@ -60,7 +60,7 @@ class ChannelService extends \Common\Services\BaseService
     /**
      * 获取列表数据 分页代码
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getList_Page($page = 1, $pageSize = 10, $name = '')
@@ -72,7 +72,7 @@ class ChannelService extends \Common\Services\BaseService
     /**
      * 根据条件查询 array( 'status' => xx,'xxx'=>xxxx)
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-03-02 11:30
+     * @date 2018-03-02 11:30
      * @return
      */
     public function getByWhere($data)
@@ -85,8 +85,8 @@ class ChannelService extends \Common\Services\BaseService
 
     /**
      * 根据主键列表获取有效的通道列表
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-02 10:28
+     * @author wangjianghua
+     * @date 2018-05-02 10:28
      * @param array $pkList array 主键列表
      */
     public function getValidByPkList($pkList)
@@ -102,8 +102,8 @@ class ChannelService extends \Common\Services\BaseService
      * 根据签名ID确定发送短信时使用的短信通道
      * 1.如果签名设置了默认通道并且默认通道有效，那么使用默认通道。
      * 2.没有设置默认通道从绑定的有效的通道中随机选用一个。
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-02 13:27
+     * @author wangjianghua
+     * @date 2018-05-02 13:27
      * @param type $signId
      * @return type
      */
@@ -172,7 +172,7 @@ class ChannelService extends \Common\Services\BaseService
      /**
      * 根据status,type查询
      * @author 李新招 <suyunlei@qiaodata.com>
-     * @date 2017-06-13 14:50
+     * @date 2018-06-13 14:50
      * @return
      */
     public function getByTypeStatus($status = 1,$type=[])

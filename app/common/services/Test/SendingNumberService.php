@@ -5,8 +5,8 @@ use Common\Services\RedisService;
 
 /**
  * 每个手机号码每天发送次数记录
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-5-4 10:01:59
+ * @author wangjianghua
+ * @date 2018-5-4 10:01:59
  */
 class SendingNumberService
 {
@@ -30,8 +30,8 @@ class SendingNumberService
 
     /**
      * 获取手机号码的发送次数。
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-04 10:25
+     * @author wangjianghua
+     * @date 2018-05-04 10:25
      * @param int $signId 签名ID
      * @param int $channelId 通道ID
      * @param array $mobileList 手机号码列表
@@ -61,8 +61,8 @@ class SendingNumberService
 
     /**
      * 发送次数增长
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-08 17:28
+     * @author wangjianghua
+     * @date 2018-05-08 17:28
      * @param int $signId 签名ID
      * @param int $channelId 通道ID
      * @param array $mobileList 手机号码列表
@@ -92,8 +92,8 @@ class SendingNumberService
     /**
      * 生成redis key
      * signId:channelId:mobile
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-04 10:35
+     * @author wangjianghua
+     * @date 2018-05-04 10:35
      * @param int $signId 签名ID
      * @param int $channelId 通道ID
      * @param int $mobile 手机号码
@@ -107,7 +107,7 @@ class SendingNumberService
     /**
      * 记录中转失败的次数，单次任务、单一手机号，限制三次，第四次发送失败不拦截
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-08-01
+     * @date 2018-08-01
      */
     public function incrTransferSendingNumber($taskId, $mobile)
     {
@@ -123,7 +123,7 @@ class SendingNumberService
     /**
      * 查询中转失败的次数，单次任务、单一手机号，限制三次，第四次发送失败不拦截
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-08-01
+     * @date 2018-08-01
      */
     public function getTransferSendingNumber($taskId, $mobile)
     {
@@ -137,7 +137,7 @@ class SendingNumberService
     /**
      * 记录任务包发送的位置，用于做断点续发
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-09-11
+     * @date 2018-09-11
      */
     public function setPackageSendNumber($taskId, $number = 0)
     {
@@ -150,7 +150,7 @@ class SendingNumberService
     /**
      * 获取任务包发送的位置，用于做断点续发
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-09-11
+     * @date 2018-09-11
      */
     public function getPackageSendNumber($taskId)
     {
@@ -163,7 +163,7 @@ class SendingNumberService
     /**
      * 删除任务包发送的位置
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-09-11
+     * @date 2018-09-11
      */
     public function delPackageSendNumber($taskId)
     {
@@ -176,7 +176,7 @@ class SendingNumberService
     /**
      * 记录中转失败的次数，单次任务、单一手机号，限制三次，第四次发送失败不拦截
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-08-01
+     * @date 2018-08-01
      */
     public function incrWarningSendingNumber($channel)
     {
@@ -192,7 +192,7 @@ class SendingNumberService
     /**
      * 查询中转失败的次数，单次任务、单一手机号，限制三次，第四次发送失败不拦截
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-08-01
+     * @date 2018-08-01
      */
     public function getWarningSendingNumber($channel)
     {

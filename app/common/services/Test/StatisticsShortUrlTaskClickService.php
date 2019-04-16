@@ -20,7 +20,7 @@ class StatisticsShortUrlTaskClickService extends \Common\Services\BaseService
     /**
      * 根据类型查找签名统计数据
      * @author 王江华 <wangjianghua@qiaodata.com>
-     * @date 2017-04-25 15:39
+     * @date 2018-04-25 15:39
      * @param int $type 渠道类型
      * @return obj
      */
@@ -33,7 +33,7 @@ class StatisticsShortUrlTaskClickService extends \Common\Services\BaseService
     /**
      * 根据类型查找签名统计数据
      * @author 王江华 <wangjianghua@qiaodata.com>
-     * @date 2017-04-25 15:39
+     * @date 2018-04-25 15:39
      * @param int $type 渠道类型
      * @return obj
      */

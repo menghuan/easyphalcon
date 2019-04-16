@@ -5,8 +5,8 @@ use Common\Models\SmsPlatForm\Whitelist;
 
 /**
  * 管理员
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-2-25 11:25:22
+ * @author wangjianghua
+ * @date 2018-2-25 11:25:22
  */
 class WarningService extends \Common\Services\BaseService
 {
@@ -18,7 +18,7 @@ class WarningService extends \Common\Services\BaseService
     /**
      * 获取列表数据 分页代码
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function sendWarningSms($message = '')

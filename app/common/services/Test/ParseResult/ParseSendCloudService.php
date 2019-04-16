@@ -7,7 +7,7 @@ use Common\Services\SmsPlatForm\SendTaskDetailService;
 /**
  * 解析数米返回值
  * @author 李新招 <lixinzhao@qiaodata.com>
- * @date 2017-3-3 14:38:14
+ * @date 2018-3-3 14:38:14
  */
 class ParseSendCloudService implements ParseResultInteface
 {
@@ -15,7 +15,7 @@ class ParseSendCloudService implements ParseResultInteface
     /**
      * 解析发送同一内容到一个或多个手机号
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09
+     * @date 2018-05-09
      * @param string $response 短信通道返回的信息
      *   resptime,respstatus,msgid
      * @return array
@@ -61,7 +61,7 @@ class ParseSendCloudService implements ParseResultInteface
     /**
      * 解析批量发送结果
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09
+     * @date 2018-05-09
      * @param string $response 短信通道返回的信息
      * @return array
      */
@@ -120,9 +120,9 @@ class ParseSendCloudService implements ParseResultInteface
     /**
      * 解析余额接口返回的信息
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09
+     * @date 2018-05-09
      * @param string $response 请求余额接口返回的信息
-     * string(31) "20170307092638,0 5541259,470535"
+     * string(31) "20180307092638,0 5541259,470535"
      * @return array
      */
     public function parseBalance($response)
@@ -141,7 +141,7 @@ class ParseSendCloudService implements ParseResultInteface
     /**
      * 解析短信通道推送的短信上行消息
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09
+     * @date 2018-05-09
      * @param string $response 短信通道推送的消息
      * @return array
      */
@@ -198,7 +198,7 @@ class ParseSendCloudService implements ParseResultInteface
     /**
      * 解析短信通道推送的短信上行状态
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09
+     * @date 2018-05-09
      * @param string $response 短信通道推送的消息
      * @return array
      */
@@ -253,7 +253,7 @@ class ParseSendCloudService implements ParseResultInteface
     /**
      * 更新任务状态
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-09
+     * @date 2018-05-09
      * @param int $taskId 任务ID
      * @param array $sendResult 任务状态数组
      * [

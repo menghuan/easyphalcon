@@ -4,7 +4,7 @@ namespace Common\Services\SmsPlatForm;
 /**
  * AES加密
  * @author 苏云雷 <suyunlei@qiaodata.com>
- * @date 2017-3-6 14:00:00
+ * @date 2018-3-6 14:00:00
  */
 class AesService extends \Common\Services\BaseService
 {

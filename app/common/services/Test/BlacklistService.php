@@ -7,8 +7,8 @@ use Phalcon\Config\Adapter\Php as ConfigPhp;
 
 /**
  * 管理员
- * @author 董光明 <dongguangming@qiaodata.com>
- * @date 2017-2-25 11:25:22
+ * @author wangjianghua
+ * @date 2018-2-25 11:25:22
  */
 class BlacklistService extends \Common\Services\BaseService
 {
@@ -21,7 +21,7 @@ class BlacklistService extends \Common\Services\BaseService
     /**
      * 获取列表数据 分页代码
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-02-27 11:30
+     * @date 2018-02-27 11:30
      * @return
      */
     public function getList_Page($where = [], $page = 1, $pageSize = 10)
@@ -37,7 +37,7 @@ class BlacklistService extends \Common\Services\BaseService
     /**
      * 根据sign_id 和 mobile查找用户信息
      * @author 李新招 <lixinzhao@qiaodata.com>
-     * @date 2017-02-28 17:32
+     * @date 2018-02-28 17:32
      * @param string $sign_id $mobile int
      * @return
      */
@@ -52,7 +52,7 @@ class BlacklistService extends \Common\Services\BaseService
     /**
      * 根据签名id 和 mobiles 查询黑名单数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @data 2017-03-06 14:48
+     * @data 2018-03-06 14:48
      */
     public function getBlackListBySignidMobiles($mobiles = [])
     {
@@ -72,7 +72,7 @@ class BlacklistService extends \Common\Services\BaseService
     /**
      * 根据签名id 和 mobiles 查询黑名单数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @data 2017-03-06 14:48
+     * @data 2018-03-06 14:48
      */
     public function getByMobiles($mobiles = [])
     {
@@ -88,8 +88,8 @@ class BlacklistService extends \Common\Services\BaseService
      * 1.签名下的普通黑名单，带有效期的。
      * 2.签名下的永久黑名单。
      * 3.短信平台系统中的永久黑名单。
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-03 14:47
+     * @author wangjianghua
+     * @date 2018-05-03 14:47
      * @param int $signId 签名ID
      * @return array 手机黑名单列表
      */
@@ -140,8 +140,8 @@ class BlacklistService extends \Common\Services\BaseService
     
     /**
      * 根据黑名单等级查询黑名单列表
-     * @author 董光明 <dongguangming@qiaodata.com>
-     * @date 2017-05-03 15:34
+     * @author wangjianghua
+     * @date 2018-05-03 15:34
      * @param type $levle 黑名单等级，黑名单的总体状态 0短期黑名单 1巧达永久黑名单
      * @return obj
      */
@@ -154,7 +154,7 @@ class BlacklistService extends \Common\Services\BaseService
     /**
      * 根据update_time获取黑名单数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-26
+     * @date 2018-05-26
      * @return obj
      */
     public function getByTime($time = 0, $totalStatus = 0, $status = 1)
@@ -166,7 +166,7 @@ class BlacklistService extends \Common\Services\BaseService
     /**
      * 修改黑名单数据
      * @author 苏云雷 <suyunlei@qiaodata.com>
-     * @date 2017-05-26
+     * @date 2018-05-26
      * @param array $where  修改的条件
      * @param array $data   修改的数据
      */
