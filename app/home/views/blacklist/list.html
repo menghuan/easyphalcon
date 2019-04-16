@@ -1,0 +1,101 @@
+{% extends "base.html"%}
+{% block title %}<title>欢迎登陆短信平台</title>{% endblock %}
+{% block body %}
+<section id="main-content">
+    <section class="wrapper">
+        <!-- page start-->
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">黑名单列表</label>
+                        </div>
+                        <!--<form action="" method="post">-->
+                            <div class="col-sm-2">
+                                <select class="form-control seletor" data-type="project_id" id="project_id">
+                                    <option value="0">选择产品</option>
+                                    {% for project in projectInfos %}
+                                    <option value="{{project.id}}" {% if project.id== projectId %} selected {% endif %}>{{project.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control seletor" data-type="sign_id" id="sign_id">
+                                    <option value="0">选择签名</option>
+                                    {% for sign in signInfo %}
+                                    <option value="{{sign.id}}" {% if sign.id== signId %} selected {% endif %}>{{sign.name}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col-sm-1">
+                                <select class="form-control seletor" data-type="status" id="status">
+                                    <option value="0" {% if status== 0 %} selected {% endif %}>全部</option>
+                                    <option value="1" {% if status== 1 %} selected {% endif %}>有效</option>
+                                    <option value="2" {% if status== 2 %} selected {% endif %}>无效</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" id="mobile" class="form-control" value="{% if mobile != 0 %}{{mobile}}{% endif %}" placeholder="请输入要查找的手机号">
+                            </div>
+                        <input type="hidden" id="curPage" value="{{curPage}}">
+                        <button type="submit" class="btn btn-primary">搜索</button>
+                        <!--</form>-->
+                    </header>
+                    <div class="panel-body">
+                        <section id="no-more-tables">
+                            <table class="table table-hover">
+                                <thead class="cf">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>产品名称</th>
+                                    <th>签名名称</th>
+                                    <th>手机号</th>
+                                    <th>机主姓名</th>
+                                    <th>是否有效</th>
+                                    <th>数据创建时间</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for l in lists %}
+                                <tr>
+                                    <td>{{ l.id }}</td>
+                                    <td>{{ projectInfos[l.project_id].name }}</td>
+                                    <td>{{ names[l.sign_id] }}</td>
+                                    <td>{{ l.mobile }}</td>
+                                    <td>{{ mobileUsers[l.mobile] }}</td>
+                                    <td>{% if l.status == 1 %}有效{% else %}失效{% endif %}</td>
+                                    <td>{% if l.create_time != 0 %}{{ date('Y-m-d',l.create_time) }}{% endif %}</td>
+                                </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                    <ul class="pagination">
+                        {{page}}
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <!-- page end-->
+    </section>
+</section>
+</section>
+{% endblock %}
+{% block script %}
+<script>
+    $('.btn-primary').on('click',function(){
+        var sign_id = $('#sign_id').val(), status = $('#status').val(), mobile = $('#mobile').val(), curPage = $('#curPage').val(), project_id =  $('#project_id').val();
+        location.href = '/blacklist/list/1/'+project_id+'/'+sign_id+'/'+status+'/'+mobile;
+    });
+    $('.seletor').on('change',function(){
+        var sign_id = $('#sign_id').val(), status = $('#status').val(), mobile = $('#mobile').val(),
+                curPage = $('#curPage').val(), project_id =  $('#project_id').val(),type = $(this).data('type');
+        if(type == 'project_id'){
+            sign_id = 0;
+        }
+        location.href = '/blacklist/list/1/'+project_id+'/'+sign_id+'/'+status+'/'+mobile;
+    });
+</script>
+{% endblock %}
