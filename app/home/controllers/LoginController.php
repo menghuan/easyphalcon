@@ -1,5 +1,5 @@
 <?php
-use Common\Services\SmsPlatForm\AdminService;
+use Common\Services\Test\AdminService;
 
 /**
  * 登陆表单页

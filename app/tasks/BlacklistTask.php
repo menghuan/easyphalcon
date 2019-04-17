@@ -1,7 +1,7 @@
 <?php
 use Phalcon\Cli\Task;
 use Phalcon\Config\Adapter\Php as ConfigPhp;
-use Common\Services\test\BlacklistService;
+use Common\Services\Test\BlacklistService;
 /**
  * 同步黑名单数据，线上黑名单设置为180天黑名单
  * @author wangjianghua

@@ -1,5 +1,5 @@
 <?php
-namespace Common\Models\SmsPlatForm;
+namespace Common\Models\Test;
 
 
 /**

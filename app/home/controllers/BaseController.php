@@ -2,7 +2,7 @@
 
 /**
  * 控制器基类
- * @author wangjiangahu
+ * @author wangjianghua
  * @date 2018-2-25 15:49:50
  */
 class BaseController extends Phalcon\Mvc\Controller
@@ -62,7 +62,7 @@ class BaseController extends Phalcon\Mvc\Controller
     /**
      * 检查登陆状态
      * 如果已经登陆返回true否则返回false
-     * @author wangjiangahu
+     * @author wangjianghua
      * @date 2018-02-25 16:19
      * @return bool
      */
@@ -93,7 +93,7 @@ class BaseController extends Phalcon\Mvc\Controller
 
     /**
      * 格式化分页
-     * @author wangjiangahu
+     * @author wangjianghua
      * @date 2018-04-25 13:00:00
      * @param int $total 总数据量
      * @param int $page 当前页数
@@ -198,7 +198,7 @@ class BaseController extends Phalcon\Mvc\Controller
     
     /**
      * 错误提示方法
-     * @author wangjiangahu
+     * @author wangjianghua
      * @param string $message 提示信息
      * @param string $redirect 跳转路径
      * @param int $waitSeconds 等待秒数
@@ -220,7 +220,7 @@ class BaseController extends Phalcon\Mvc\Controller
     
     /**
      * 成功提示方法
-     * @author wangjiangahu
+     * @author wangjianghua
      * @param string $message 提示信息
      * @param string $redirect 跳转路径
      * @param int $waitSeconds 等待秒数
