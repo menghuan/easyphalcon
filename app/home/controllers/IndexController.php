@@ -17,9 +17,11 @@ class IndexController extends BaseController
         parent::initialize();
         $this->taskService = new taskService();
     }
-    
-    /*
+
+    /**
      * 获取表名
+     * @param int $projectId
+     * @param string $table
      */
     public function getTableAction($projectId = 0,$table = ''){
        $this->getShardTable($projectId,$table);

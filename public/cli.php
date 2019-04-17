@@ -52,21 +52,12 @@ $di = new CliDI();
 $loader = new Loader();
 $loader->registerDirs(array(
     $base_path.'/app/tasks/',
-    $base_path.'/app/common/models/SmsPlatForm/',
     $base_path.'/app/common/models/',
-    $base_path.'/app/common/services/SmsPlatForm/',
-    $base_path.'/app/common/services/SmsPlatForm/Parameter/',
-    $base_path.'/app/common/services/SmsPlatForm/ParseResult/',
-    $base_path.'/app/common/services/SmsPlatForm/TaskStatus/',
     $base_path.'/app/common/services/',
     $base_path.'/app/common/library/utils/',
 ))->register();
 $loader->registerNamespaces(array(
-    'Common\\Models\\SmsPlatForm' => $base_path.'/app/common/models/SmsPlatForm/',
     'Common\\Models' => $base_path.'/app/common/models/',
-    'Common\\Services\\SmsPlatForm' => $base_path.'/app/common/services/SmsPlatForm/',
-    'Common\\Services\\SmsPlatForm\\Parameter' => $base_path.'/app/common/services/SmsPlatForm/Parameter/',
-    'Common\\Services\\SmsPlatForm\\ParseResult' => $base_path.'/app/common/services/SmsPlatForm/ParseResult/',
     'Common\\Services' => $base_path.'/app/common/services/',
     'Common\\Library\\Utils' => $base_path . '/app/common/library/utils/',
 ));

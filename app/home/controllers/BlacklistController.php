@@ -68,11 +68,6 @@ class BlacklistController extends BaseController
             $result = $balckService->insertOneIgnoreDuplicate($data);
         }
 
-//        unset($data['name']);
-//        unset($data['total_status']);
-//        $data['sign_id'] = $signId;
-//        $data['replay_type'] = 1;
-//        (new ReplayDetailService())->insertOneIgnoreDuplicate($data);
         if ($result) {
             $this->alt("添加成功",'/blacklist/listAdd/');
         } else {
@@ -195,7 +190,7 @@ class BlacklistController extends BaseController
 
     /**
      * 黑名单修改
-     * @author 苏云雷 <suyunlei@qiaodata.com>
+     * @author wangjianghua
      * @date 2018-05-03 15:47
      * @return json
      */
@@ -249,7 +244,7 @@ class BlacklistController extends BaseController
 
     /**
      * blacklist POST接受参数
-     * @author lxz <lixinzhao@qiaodata.com>
+     * @author wangjianghua
      * @date 2018-02-28 12:00
      * @return  array  $data
      */

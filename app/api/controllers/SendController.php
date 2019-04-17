@@ -286,7 +286,7 @@ class SendController extends Phalcon\Mvc\Controller
     
     /**
      * 记录任务整体失败的日志内容
-     * @author 苏云雷 <suyunlei@qiaodata.com>
+     * @author wangjianghua
      * @date 2018-06-26
      * @return null;
      */

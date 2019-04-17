@@ -51,11 +51,7 @@ try {
         '../app/common/library/',
     ])->register();
     $loader->registerNamespaces([
-        'Common\\Models\\SmsPlatForm' => '../app/common/models/SmsPlatForm/',
         'Common\\Models' => '../app/common/models/',
-        'Common\\Services\\SmsPlatForm' => '../app/common/services/SmsPlatForm/',
-        'Common\\Services\\SmsPlatForm\\Parameter' => '../app/common/services/SmsPlatForm/Parameter/',
-        'Common\\Services\\SmsPlatForm\\ParseResult' => '../app/common/services/SmsPlatForm/ParseResult/',
         'Common\\Services' => '../app/common/services/',
         'Common\\Util' => '../app/common/library/utils/',
     ]);

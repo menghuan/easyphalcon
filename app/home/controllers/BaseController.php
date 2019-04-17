@@ -78,7 +78,7 @@ class BaseController extends Phalcon\Mvc\Controller
 
     /**
      * ajax请求返回json数据
-     * @author 苏云雷 <suyunlei@qiaodata.com>
+     * @author wangjianghua
      * @date 2018-02-28 15:00:00
      */
     public function ajax_return($code = '', $msg = '', $data = array())
