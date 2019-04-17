@@ -1,5 +1,5 @@
 # easyphalcon
-easyphalcon  一款简单的phalcon框架
+easyphalcon  一款简单的phalcon框架  需要事先安装phalcon扩展
 
 # 基础的 Phalcon 框架项目
 
